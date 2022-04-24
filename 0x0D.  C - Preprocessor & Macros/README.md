@@ -6,6 +6,7 @@ We can have as many macros as required.
 we can also have parameterised macros. ie: using a macro like a function.
 
 In the example SQR.c we use a macro as a function to give the square of a number using a parameter in the macro.
+The use of parameters on macros is not advised due to the potential error margin it holds. 
 
 Here are some C preprocessor command Directives and their Description: 
 1. #define - Substitutes a preprocessor macro.

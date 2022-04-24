@@ -10,6 +10,7 @@ The use of parameters on macros is not advised due to the potential error margin
 
 In the example CM.c (Conditional Macro) we use #ifdef, #else and #endif to give conditions on how the preprocessorreads and executes our code.
 
+In the file SPM.c (System Predefined Macros) I use some predefined macros to get some data like the date, Time and File that im working on.
 Here are some C preprocessor command Directives and their Description: 
 1. #define - Substitutes a preprocessor macro.
 2. #include - inserts a particular header from another file.

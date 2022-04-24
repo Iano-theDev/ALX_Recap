@@ -20,4 +20,3 @@ Here are some C preprocessor command Directives and their Description:
 9. #endif - Ends preprocessor conditional.
 10. #error - Prints error message on sdterr.
 11. #pragma - issues special commands to the compiler, using a standardized method.
-

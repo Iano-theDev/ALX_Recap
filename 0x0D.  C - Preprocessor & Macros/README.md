@@ -27,3 +27,8 @@ Here are some C preprocessor command Directives and their Description:
 9. #endif - Ends preprocessor conditional.
 10. #error - Prints error message on sdterr.
 11. #pragma - issues special commands to the compiler, using a standardized method.
+
+More Notes:
+- if you're defining a macros in terms of a mathematical expression, it's wise to surround the entire value with parentheses(coz of the operator precedence).
+- Surrounding the macro body with parentheses & in some instances curl braces (eg. in the case of multi line macros) will generally help to avoid many unnecessary errors.
+- Avoid the use of macros and try and replace it with const since macros are dangerous :-) ...>>

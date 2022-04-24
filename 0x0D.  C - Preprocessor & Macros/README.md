@@ -5,4 +5,4 @@ The macros are also defined in the C preprocessor stage before the compiler stag
 We can have as many macros as required.
 we can also have parameterised macros. ie: using a macro like a function.
 
-In the example SQR.c we use a macro as a function to give the square of a number.
+In the example SQR.c we use a macro as a function to give the square of a number using a parameter in the macro.

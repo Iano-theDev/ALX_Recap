@@ -8,7 +8,9 @@ we can also have parameterised macros. ie: using a macro like a function.
 In the example SQR.c we use a macro as a function to give the square of a number using a parameter in the macro.
 The use of parameters on macros is not advised due to the potential error margin it holds.
 
-In the example CM.c (Conditional Macro) we use #ifdef, #else and #endif to give conditions on how the preprocessorreads and executes our code.
+In the example CM.c (Conditional Macro) we use #ifdef, #else and #endif to give conditions on how the preprocessor reads and executes our code.
+
+Now we will use the #error directive in a to tell us we have an error when none of our defined conditions are satisfied.
 
 In the file SPM.c (System Predefined Macros) I use some predefined macros to get some data like the date, Time and File that im working on.
 Here are some C preprocessor command Directives and their Description: 

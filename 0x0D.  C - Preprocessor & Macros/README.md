@@ -11,6 +11,8 @@ The use of parameters on macros is not advised due to the potential error margin
 In the example CM.c (Conditional Macro) we use #ifdef, #else and #endif to give conditions on how the preprocessor reads and executes our code.
 
 Now we will use the #error directive in a to tell us we have an error when none of our defined conditions are satisfied.
+I noted the file err.c did not have a .exe file meaning it did not complie which is supposed to be the case since none of our conditions are true.
+Instead, the file gives an error and does not continue to compile.
 
 In the file SPM.c (System Predefined Macros) I use some predefined macros to get some data like the date, Time and File that im working on.
 Here are some C preprocessor command Directives and their Description: 

@@ -7,3 +7,5 @@ In C you can declare different variables under one name in a block of memory all
 This is what is called a structure in C. In other programming languages this may be referred to as a class.
 
 We could use arrays to declare such, but the problem is that arrays only takes variables of the same type.
+
+In the program CAR.c I use structure to define different spesifications of two cars, car1 & car2.

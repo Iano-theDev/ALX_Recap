@@ -21,5 +21,17 @@ This is useful for passing structs to a function. The pointer can be dereference
 typedef is used in C to give a type(like; char, int or any other type) a new name(user defined).</br>
 You can also use typedef with structures to define a new data type. For example: </br>
 ```rb
-#tdef.c
+#include <stdio.h>
+
+struct Computer {
+    char *name;
+    char *brand;
+};
+
+typedef struct Computer Computer;
+
+typedef struct Computer {
+    char *name;
+    char *brand;
+}Computer;
 ```

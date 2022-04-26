@@ -8,8 +8,8 @@ In C we can provide pointers to functions. For example:(declaration and function
 ```rb
 
 #include <stdio.h>
-//a normal function with an int parameter
-//and a void return value
+/* a normal function with an int parameter
+ * and a void return value*/
 
 void fun(int a)
 {
@@ -18,7 +18,8 @@ void fun(int a)
 
 int main()
 {
-    //fun_ptr is a pointer to function fun()
+    /*fun_ptr is a pointer to function fun()*/
+    
     void (*fun_ptr)(int) = &fun;
 
     /*The above line is equivalent of following two void(*fun_ptr)(int);

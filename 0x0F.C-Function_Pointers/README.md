@@ -47,7 +47,8 @@ Output:
 4. We can have an array of function pointers like normal pointers.</br>
 5. FP(function pointer) can be used in place of switch case. eg, in the prog. below user is asked for a choice between 0 and 2 to do different tasks.
 </br>
-   ```rb
+
+```rb
     
     #include <stdio.h>
 
@@ -82,4 +83,4 @@ Output:
 
         return (0);
     }
-   ``` 
+``` 

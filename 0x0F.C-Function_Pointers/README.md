@@ -27,6 +27,7 @@ int main()
     */
 
     /*Invoking fun() using fun_ptr*/
+
     (*fun_ptr)(10);
 
     rerturn (0);
@@ -38,3 +39,45 @@ int main()
 Output:
         value of a is 10;
 ```
+
+<h4>Interesting facts about function pointers.</h4>
+1. Function pointers point to code, not data like normal functions.(a function pointer stores the start of executable code)
+2. We do not allocate/de-allocate memory like we do using normal pointers.
+3. A functions name can also be used to get functions' address.
+4. We can have an array of function pointers like normal pointers.
+5. FP(function pointer) can be used in place of switch case. eg, in the prog. below user is asked for a choice between 0 and 2 to do different tasks.
+   ```rb
+    #include <stdio.h>
+
+    void add(int a, int b)
+    {
+        printf("Addition is %d\n", a + b);
+    }
+    void subtract(int a, int b)
+    {
+        printf("Subtraction is %d\n", a - b);
+    }
+    void multiply(int a, int b)
+    {
+        printf("Multiplication is %d\n", a * b);
+    }
+
+    int main()
+    {
+        /**
+        * fun_ptr_arr is an array of function pointers to functions
+        */
+
+        void(* fun_ptr_arr[])(int, int) = {add, subtract, multiply};
+        unsigned int ch, a = 15, b = 10;
+
+        printf("Enter choice: 0 for add, 1 for subtract, 2 for multiply\n");
+        scanf("%d", &ch);
+
+        if (ch > 2) return 0;
+        
+        (*fun_ptr_arr[ch])(a)(b);
+
+        return (0);
+    }
+   ``` 

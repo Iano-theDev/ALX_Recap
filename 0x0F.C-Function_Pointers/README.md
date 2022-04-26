@@ -41,12 +41,14 @@ Output:
 ```
 
 <h4>Interesting facts about function pointers.</h4>
-1. Function pointers point to code, not data like normal functions.(a function pointer stores the start of executable code)
-2. We do not allocate/de-allocate memory like we do using normal pointers.
-3. A functions name can also be used to get functions' address.
-4. We can have an array of function pointers like normal pointers.
+1. Function pointers point to code, not data like normal functions.(a function pointer stores the start of executable code)</br>
+2. We do not allocate/de-allocate memory like we do using normal pointers.</br>
+3. A functions name can also be used to get functions' address.</br>
+4. We can have an array of function pointers like normal pointers.</br>
 5. FP(function pointer) can be used in place of switch case. eg, in the prog. below user is asked for a choice between 0 and 2 to do different tasks.
+</br>
    ```rb
+    
     #include <stdio.h>
 
     void add(int a, int b)

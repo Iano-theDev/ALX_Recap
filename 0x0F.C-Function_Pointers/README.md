@@ -124,10 +124,12 @@ qsort is an inbuilt function in the C library.</br>
  ```
 
 ```rb
+
 Output for qsort.c:
                     6, 9, 12, 34, 45, 56, 67, 
 
 ```
-
+</br>
+In the program search.c we use a search function to find close elements by writing a customized compare function.
 
 7. 

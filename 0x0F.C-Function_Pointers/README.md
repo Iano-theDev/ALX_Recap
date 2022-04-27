@@ -132,4 +132,9 @@ Output for qsort.c:
 </br>
 In the program search.c we use a search function to find close elements by writing a customized compare function.
 
+```rb
+    output is: 
+                Returned index is 5 
+```
+
 7. 

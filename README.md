@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-I will be redoing some tasks from alx here.
-=======
+<h1>ALX REACP</h1></br>
+
+I will be redoing some tasks from alx here.</br>
+==========================================</br>
 A recap on past alx projects for practice.
->>>>>>> fcfdd9243ab848691a86ec058931cbaa6aeeba35
+

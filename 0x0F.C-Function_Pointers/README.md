@@ -113,7 +113,21 @@ int main()
 In the example; qsort.c we use the function qsort to sort arrays in ascending order or descending order or in any
 other order in case of array of structures. </br>
 qsort is an inbuilt function in the C library.</br>
- With function pointers and void pointers its possible to use qsort for any data type.
+ With function pointers and void pointers its possible to use qsort for any data type.</br>
+ All this helps reduce code redundancy.
+ ```rb
+
+    Redundant code is code that is compiled in a computer program that is unnecessary.
+    ie. 1. recomputing a value that has previously been calculated and is still available,
+        2. code that is never executed,
+        3. code that is executed but has no external effect.
+ ```
+
+```rb
+Output for qsort.c:
+                    6, 9, 12, 34, 45, 56, 67, 
+
+```
 
 
 7. 

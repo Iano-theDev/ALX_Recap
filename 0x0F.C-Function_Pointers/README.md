@@ -111,8 +111,8 @@ int main()
 ```
 
 In the example; qsort.c we use the function qsort to sort arrays in ascending order or descending order or in any
-other order in case of array of structures.
-qsort is an inbuilt function in the C library.
+other order in case of array of structures. </br>
+qsort is an inbuilt function in the C library.</br>
  With function pointers and void pointers its possible to use qsort for any data type.
 
 

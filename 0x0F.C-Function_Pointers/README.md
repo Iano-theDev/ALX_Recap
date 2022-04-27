@@ -84,3 +84,36 @@ Output:
         return (0);
     }
 ``` 
+6. Function pointers can be passed as an argument and be returned from a function. 
+```rb
+    
+// A simple C program to show function pointers as parameter
+#include <stdio.h>
+  
+// Two simple functions
+void fun1() { printf("Fun1\n"); }
+void fun2() { printf("Fun2\n"); }
+  
+// A function that receives a simple function
+// as parameter and calls the function
+void wrapper(void (*fun)())
+{
+    fun();
+}
+  
+int main()
+{
+    wrapper(fun1);
+    wrapper(fun2);
+    return 0;
+}
+
+```
+
+In the example; qsort.c we use the function qsort to sort arrays in ascending order or descending order or in any
+other order in case of array of structures.
+qsort is an inbuilt function in the C library.
+ With function pointers and void pointers its possible to use qsort for any data type.
+
+
+7. 

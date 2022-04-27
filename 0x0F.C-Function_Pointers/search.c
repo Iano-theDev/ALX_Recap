@@ -17,3 +17,13 @@ int search(void * arr, int arr_size, int ele_size, void *x, bool compare (const 
     //if element is not found
     return (-1);
 }
+
+int main()
+{
+    int arr[] = {6, 3, 5, 7, 89, 21, 49};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int x = 21;
+    printf ("Returned index is %d ", search(arr, n, sizeof(int), &x, compare));
+
+    return (0);
+}

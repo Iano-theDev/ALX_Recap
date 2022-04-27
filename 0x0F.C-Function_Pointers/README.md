@@ -137,4 +137,5 @@ In the program search.c we use a search function to find close elements by writi
                 Returned index is 5 
 ```
 
-7. 
+7. Many object oriented features in C++ are implemented using function pointers in C. eg: Virtual functions.</br>
+   Class methods are another example implemented using Function Pointers.

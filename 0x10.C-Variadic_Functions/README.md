@@ -38,3 +38,10 @@ declaration :
 ```rb
    int check(int a, double b, ...); 
 ```
+
+Variadic Functions must have atleast one named parameter, so, for instance:
+
+```rb
+    char *wrong(...);
+```
+ is wrong in C. but its permitted in C++.

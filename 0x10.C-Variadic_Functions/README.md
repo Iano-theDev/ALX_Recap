@@ -28,6 +28,11 @@ The macros defined in the header <b>stdarg.h</b>: </br>
     </br>
     3. void va_end(va_list ap) :
             This macro allows a function with variable arguments which used the va_start macro to return. If va-end is not called before returning from the function, the result is undefined.
+    </br>
+    4. void va_copy(va_list dest, va_list src) :
+            The va_copy macro copies src  to dest. va_end should be called on dest before the function returns or any subsequent reinitialization of dest (via calls to va_start or va_copy).</br>
+            Param: dest - An instance of the va_list type to initialize.
+                   src - The source va_list will be used to initialize dest
 ```
 
 <h4>Declaring Variadic functions</h4></br>

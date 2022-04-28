@@ -30,3 +30,11 @@ The macros defined in the header <b>stdarg.h</b>: </br>
             This macro allows a function with variable arguments which used the va_start macro to return. If va-end is not called before returning from the function, the result is undefined.
 ```
 
+<h4>Declaring Variadic functions</h4></br>
+
+an example of a function that uses variadic functions the printf function.
+</br>
+declaration :
+```rb
+   int check(int a, double b, ...); 
+```

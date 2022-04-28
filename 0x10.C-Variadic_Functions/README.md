@@ -18,5 +18,15 @@ Varible types defined in the header <b>stdarg.h</b> :
 <h4>Library Macros</h4>
 The macros defined in the header <b>stdarg.h</b>: </br>
 
+```rb
 
+    1. va_start(va_lst ap, last_arg) :
+            This macros initializes ap variable to be used with the va_arg and va_end macros. The last-arg is the last known fixed argument being passed to the function. that is, the argument before the ellipsis.
+    </br>
+    2. type va_arg(va_list ap, type) :
+            This macro retrieves the next argument in the parameter list of the function with type <i>type</i>.
+    </br>
+    3. void va_end(va_list ap) :
+            This macro allows a function with variable arguments which used the va_start macro to return. If va-end is not called before returning from the function, the result is undefined.
+```
 

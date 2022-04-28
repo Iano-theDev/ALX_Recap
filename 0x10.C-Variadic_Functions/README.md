@@ -33,8 +33,8 @@ The macros defined in the header <b>stdarg.h</b>: </br>
     </br>
     4. void va_copy(va_list dest, va_list src) :
             The va_copy macro copies src  to dest. va_end should be called on dest before the 
-            function returns or any subsequent reinitialization of dest (via calls to va_start or va_copy).
-            
+            function returns or any subsequent re-initialization of dest (via calls to va_start or va_copy).
+
             Param: dest - An instance of the va_list type to initialize.
                    src - The source va_list will be used to initialize dest
 ```

@@ -21,16 +21,20 @@ The macros defined in the header <b>stdarg.h</b>: </br>
 ```rb
 
     1. va_start(va_lst ap, last_arg) :
-            This macros initializes ap variable to be used with the va_arg and va_end macros. The last-arg is the last known fixed argument being passed to the function. that is, the argument before the ellipsis.
+            This macros initializes ap variable to be used with the va_arg and va_end macros. The last-arg 
+            is the last known fixed argument being passed to the function. that is, the argument before the ellipsis.
     </br>
     2. type va_arg(va_list ap, type) :
-            This macro retrieves the next argument in the parameter list of the function with type <i>type</i>.
+            This macro retrieves the next argument in the parameter list of the function with type type.
     </br>
     3. void va_end(va_list ap) :
-            This macro allows a function with variable arguments which used the va_start macro to return. If va-end is not called before returning from the function, the result is undefined.
+            This macro allows a function with variable arguments which used the va_start macro to return. 
+            If va-end is not called before returning from the function, the result is undefined.
     </br>
     4. void va_copy(va_list dest, va_list src) :
-            The va_copy macro copies src  to dest. va_end should be called on dest before the function returns or any subsequent reinitialization of dest (via calls to va_start or va_copy).</br>
+            The va_copy macro copies src  to dest. va_end should be called on dest before the 
+            function returns or any subsequent reinitialization of dest (via calls to va_start or va_copy).
+            
             Param: dest - An instance of the va_list type to initialize.
                    src - The source va_list will be used to initialize dest
 ```

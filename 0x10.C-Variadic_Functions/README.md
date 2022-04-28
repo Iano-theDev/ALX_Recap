@@ -44,4 +44,18 @@ Variadic Functions must have atleast one named parameter, so, for instance:
 ```rb
     char *wrong(...);
 ```
- is wrong in C. but its permitted in C++.
+ is wrong in C, but its permitted in C++.</br>
+
+ <h4>Defining varidic functions</h4>
+</br>
+The same synatx is used in a definition: 
+
+```rb
+    long func(char, double, int, ...);
+
+    long func(char a, double b, int c, ...)
+    {
+        /*...*/
+    }
+
+```

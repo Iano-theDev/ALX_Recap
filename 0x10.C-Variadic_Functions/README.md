@@ -20,7 +20,7 @@ The macros defined in the header <b>stdarg.h</b>: </br>
 
 ```rb
 
-    1. va_start(va_lst ap, last_arg) :
+    1. va_start(va_list ap, last_arg) :
             This macros initializes ap variable to be used with the va_arg and va_end macros. The last-arg 
             is the last known fixed argument being passed to the function. that is, the argument before the ellipsis.
     </br>

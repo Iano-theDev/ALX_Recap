@@ -84,4 +84,16 @@ Since the size of the unnamed list is generally unknown, the calling conventions
 
 <b>Type Safety</b>
 
-Some C implementations provide C  extensions the allow the compiler to check for the proper formart strings and sentinel.
+Some C implementations provide C  extensions the allow the compiler to check for the proper format strings and sentinel.
+Gcc has an extension that checks the passed arguments. 
+        <b>format(archtype, string-index, first-to-check)</b></br>
+the format attribute specifirs that a function takes <i>printf</i>, <i>scanf</i>, <i>strftime</i> or <i>strfmon</i> style arguments which should be type-checked against a format string eg.
+```rb
+    extern int
+    my_printf (void *my_object, const char *my_format, ...)
+            __attribute__ ((format (printf, 2, 3)));
+```
+causes the compiler to check the arguments in calls to <i>my_printf</i> for consistency with the printf style format string argument <i>my_format</i>.</br>
+
+for example: print_all.c : 
+

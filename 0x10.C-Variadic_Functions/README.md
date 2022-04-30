@@ -69,3 +69,19 @@ The same syntax is used in a definition:
 
 ```
 </br>
+
+<b>Accessing The Arguments</b>
+To access the unnamed arguments, one musst declare a variable of type va_list in the variadic function. The macro va_start is the called with two arguments: 1.the variable declared of type va_list and
+           2.the name of the last named parameter of the function.
+After this, each invocation of the va_arg macro yields the next argument. The first argument to va_arg is the va_listand the second is the type of the next argument passed to the function.
+Finally, the va_end macro must be called on the Va_list before the function returns. (it's not required to read in all the arguments.)
+
+C99 provides an additional macro, va_copy, which can duplicate the state of a va_list. The macro invocation va_copy(va2, va1) copies va1 into va2. The function
+
+<b>Passing unnamed arguments to other calls</b>
+
+Since the size of the unnamed list is generally unknown, the calling conventions do not permit determining the size of the unnamed argument block pointed at by va_list inside the receiving function, there is no reliable way to forward the unnamed arguments into another variadic function. To some extent this restriction can be relaxed by employing variadic macros instead of variadic functions.
+
+<b>Type Safety</b>
+
+Some C implementations provide C  extensions the allow the compiler to check for the proper formart strings and sentinel.

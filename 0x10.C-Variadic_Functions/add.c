@@ -17,6 +17,7 @@ int sum(int arg1, ...)
 
 int main (void)
 {
+    printf("%d \n", sum(4, 4, 6, 78, 67));
     printf("%d ", sum(4, 2, 2, 5, 30));
     return (0);
 }

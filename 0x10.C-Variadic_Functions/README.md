@@ -95,5 +95,11 @@ the format attribute specifirs that a function takes <i>printf</i>, <i>scanf</i>
 ```
 causes the compiler to check the arguments in calls to <i>my_printf</i> for consistency with the printf style format string argument <i>my_format</i>.</br>
 
-for example: print_all.c : 
+for example, the out put for print_all.c (./p): 
+```rb
+5 2 4 14 84 97 15 
+84 51 
+
+1 
+```
 

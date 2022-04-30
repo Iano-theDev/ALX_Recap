@@ -48,16 +48,16 @@ declaration :
    int check(int a, double b, ...); 
 ```
 
-Variadic Functions must have atleast one named parameter, so, for instance:
+Variadic Functions must have at least one named parameter, so, for instance:
 
 ```rb
     char *wrong(...);
 ```
  is wrong in C, but its permitted in C++.</br>
 
- <h4>Defining varidic functions</h4>
+ <h4>Defining variadic functions</h4>
 </br>
-The same synatx is used in a definition: 
+The same syntax is used in a definition: 
 
 ```rb
     long func(char, double, int, ...);

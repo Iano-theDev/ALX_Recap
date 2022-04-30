@@ -107,4 +107,7 @@ all - (negative) integers are ignored when printing.</br>
 <h4>varargs.h</h4></br>
 Provides the same functionality as <i>stdarg.h</i> but is outdated and was used before the standardization of C.
 
+<h4>Practice</h4>
+mul.c is my own program using variadic functions to add integers passed as arguments and prints the result.
+
 

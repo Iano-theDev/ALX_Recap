@@ -102,4 +102,9 @@ for example, the out put for print_all.c (./p):
 
 1 
 ```
+all - (negative) integers are ignored when printing.</br>
+
+<h4>varargs.h</h4></br>
+Provides the same functionality as <i>stdarg.h</i> but is outdated and was used before the standardization of C.
+
 

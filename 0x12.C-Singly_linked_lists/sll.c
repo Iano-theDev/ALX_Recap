@@ -6,6 +6,16 @@ struct Node {
     struct Node* next;
 };
 
+void printList(struct Node* n)
+{
+    while (n != NULL)
+    {
+        printf(" %d ", n->data);
+        n = n->next;
+
+    }
+}
+
 //Program to create a linked list with 3 Nodes.
 
 int main ()
@@ -32,6 +42,7 @@ int main ()
     third -> next = NULL;// the third block is made NULL to indicate that the
                         //Linked List is terminated here.
     //Now the linked lis is ready.
+    printList(head);
 
     return (0);
 }

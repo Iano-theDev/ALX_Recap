@@ -6,6 +6,8 @@ data is defined with the following characteristics:
     3. Accurate - definition should be unambiguous.
     4. Clear and Concise - Definition should be understandable.
 
+A data structure is a particular way of organizing data in a computer.
+
 <b>Data Object</b>
 </br>
 Data object represents an object having data.
@@ -35,3 +37,16 @@ Some examples of operations include:</br>
 5. Sorting
 6. Merging
 </br>
+
+<h3>Linked List</h3></br>
+It links each node to the nest node.
+Linked lists can be useful in the following cases:
+1. when there's need for for constant time for insertion and deletion.
+2. when the data dynamically grows.
+3. when there's no need to access random elements from the linked list.
+4. to insert the element at any position of the list.
+
+sll.c is an example of a simple linked list.
+
+<b>Linked List Traversal</b></br>
+Print_list.c is a function to print the contents of the linked list.

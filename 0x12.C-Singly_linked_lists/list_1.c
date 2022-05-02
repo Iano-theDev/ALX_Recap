@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 typedef struct node *nodePtr;
 /** 
@@ -26,7 +27,7 @@ int main (int argc, const char * argv[])
     //node firstNode;
     //firstNode = *first;
 
-    first -> data = 61;
+    // first -> data = 61;
 
    // first -> next = malloc (sizeof(node));
    // first -> next = NULL;
@@ -37,6 +38,6 @@ int main (int argc, const char * argv[])
    temp -> next = first;
    first = temp;
 
-    printf ("Hello World!\n");
+    printf("Hello World!\n");
     return (0);
 }

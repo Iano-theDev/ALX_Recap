@@ -7,3 +7,31 @@ data is defined with the following characteristics:
     4. Clear and Concise - Definition should be understandable.
 
 <b>Data Object</b>
+</br>
+Data object represents an object having data.
+
+<b>Data Type</b></br>
+A way to classify data i.e. int, char, string etc. determining the values that can be used with the corresponding type of data, the type of operations that can performed etc.
+1. Built in Data-Type.
+2. Derived Data-Type.
+
+<b>Built in data type</b></br>
+Datatypes built in a language: int, boolean, floating, character and strings.
+
+<b>Derived Data types</b><br>
+Those data types which are implementation independent as they can be implemented in one or the other way are known as derived data types. These are normally builr by the combination of primary/built in data types and associated operations on them. eg: 1.List
+                                                                                                        2.Arrays
+                                                                                                        3.Stack
+                                                                                                        4.Queue.
+
+<b>Basic Operations</b>
+The data in the data structures are processed by certain operations. The particular data structure chosen, largely depends o the frequency of operation that needs to be performed on the data structure. 
+</br>
+Some examples of operations include:</br>
+1. Traversing
+2. Searching
+3. Insertion
+4. Deletion
+5. Sorting
+6. Merging
+</br>

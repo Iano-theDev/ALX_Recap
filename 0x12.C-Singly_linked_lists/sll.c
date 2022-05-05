@@ -41,7 +41,7 @@ int main ()
     third -> data = 3; //assign data to the third node.
     third -> next = NULL;// the third block is made NULL to indicate that the
                         //Linked List is terminated here.
-    //Now the linked lis is ready.
+    //Now the linked list is ready.
     printList(head);
 
     return (0);

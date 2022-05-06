@@ -50,3 +50,5 @@ sll.c is an example of a simple linked list.
 
 <b>Linked List Traversal</b></br>
 Print_list.c is a function to print the contents of the linked list.
+
+new linked list to store the numbers; 6, 3, 4, 2, 1.

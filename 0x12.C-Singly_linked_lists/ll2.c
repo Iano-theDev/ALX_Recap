@@ -29,6 +29,7 @@ int main ()
     struct Node* third = NULL;
     struct Node* fourth = NULL;
     struct Node* fifth = NULL;
+    struct Node* sixth = NULL;
 
     //Allocate the 5 Nodes in the heap
     head = (struct Node*)malloc(sizeof(struct Node));
@@ -36,6 +37,7 @@ int main ()
     third = (struct Node*)malloc(sizeof(struct Node));
     fourth = (struct Node*)malloc(sizeof(struct Node));
     fifth = (struct Node*)malloc(sizeof(struct Node));
+    sixth = (struct Node*)malloc(sizeof(struct Node));
 
     //five blocks have been allocated dynamically.
 
@@ -52,7 +54,10 @@ int main ()
     fourth -> next = fifth;
 
     fifth -> data = 1;
-    fifth -> next = NULL;
+    fifth -> next = sixth;
+
+    sixth -> data = 0;
+    sixth -> next = NULL;
 
     //now to print the list of 
     printList(head);

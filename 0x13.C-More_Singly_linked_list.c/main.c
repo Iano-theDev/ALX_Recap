@@ -28,19 +28,35 @@ void print_items(data_item_type *item)
     }
 }
 
+void append(data_item_type **first_item, int value)
+{
+    data_item_type *new_item = createItem(value);
+    data_item_type *last_item;
+    if (new_item == NULL)
+        return;
+
+    if (*first_item == NULL)
+        *first_item = new_item;
+    else
+    {
+        last_item = *first_item;
+        while (last_item ->next_data_item != NULL)
+                last_item = last_item ->next_data_item;
+            
+        last_item ->next_data_item = new_item;
+    }
+}
+
 int main(void)
 {
     data_item_type *first_item = NULL;
 
-    first_item = createItem(56);
-    data_item_type *second_item  = createItem(10);
-    data_item_type *third_item = createItem(15);
+    append(&first_item, 56);
+    append(&first_item, 13);
+    append(&first_item, -1);
+    append(&first_item, 58);
 
-    first_item->next_data_item = second_item;
-    second_item->next_data_item = third_item;
-    third_item->next_data_item = NULL;
-
-    print_items(third_item);
+    print_items(first_item);
 
     return (0);
 }

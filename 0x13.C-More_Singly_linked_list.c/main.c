@@ -8,23 +8,39 @@ struct data_item
 };
 typedef struct data_item data_item_type;
 
+data_item_type *createItem(int value)
+{
+    data_item_type *new_item = malloc(sizeof(data_item_type));
+    if (new_item == NULL)
+        return (NULL);
+    
+    new_item->value = value;
+    new_item->next_data_item = NULL;
+    return (new_item);
+}
+
+void print_items(data_item_type *item)
+{
+    while (item != NULL)
+    {
+        printf("%d\n", item -> value);
+        item = item -> next_data_item;
+    }
+}
+
 int main(void)
 {
-    data_item_type first_item = {.value = 10, .next_data_item = NULL};
-    data_item_type second_item = {.value = 5, .next_data_item = NULL};
-    data_item_type third_item = {.value = 3, .next_data_item = NULL};
+    data_item_type *first_item = NULL;
 
-    first_item.next_data_item = &second_item;
-    second_item.next_data_item = &third_item;
-    third_item.next_data_item = NULL;
+    first_item = createItem(56);
+    data_item_type *second_item  = createItem(10);
+    data_item_type *third_item = createItem(15);
 
-    data_item_type *current_item = &first_item;
+    first_item->next_data_item = second_item;
+    second_item->next_data_item = third_item;
+    third_item->next_data_item = NULL;
 
-    while (current_item != NULL)
-    {
-        printf("%d\n", current_item -> value);
-        current_item = current_item -> next_data_item;
-    }
+    print_items(third_item);
 
     return (0);
 }

@@ -2,19 +2,16 @@
 #include <stdio.h>
 #include <unistd.h>
 
+extern char **environ;
+
 int main(int ac, char **av, char **env)
 {
-    char *cmd = "./child";
-    char *arg[] = {NULL, NULL};
-    char *env[] = {"Color=BLUE","b=56","RANDOM_PATH=/path/to/something", NULL};
+    int i = 0;
 
-    arg[0] = cmd;
-
-    execve(
-        arg[0],
-        args,
-        env
-    );
-
+    while (environ[i] != NULL)
+    {
+        printf("%s\n", environ[i]);
+        i++;
+    }
     return (0);
 }

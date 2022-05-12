@@ -19,3 +19,12 @@ There are many types of linked lists, the main difference among them being how t
                             the link part of the last node contains the address of the first node.
 
 <h4>Singly Linked Lists</h4>
+<b>Note: Any program that is likely to change the head pointer is to be passed as a double pointer</b><br>
+Basic operation of a linked list requires traversing the linked list. The various operations that we can perform on linked list many of these operations.:<br>
+1.Insert an element in the list, this operation require list traversal.
+2.Print various elements of the list.
+3.Search an element in the list.
+4.Delete  an element in the list.
+5.Reverse a linked list.
+
+

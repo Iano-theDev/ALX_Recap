@@ -51,3 +51,19 @@ int InsertNode(NodePtr* ptrHead, int value)
 
 ```
 <b>Traversing through a linked list</b>
+The following is a function to print various nodes of a linked linked list(singly):
+```rb
+void PrintList(NodePtr head)
+{
+    while(head)
+    {
+        printf("value %d \n", head-> value);
+        head=head->next;
+    }
+}
+```
+```rb
+-the  program takes the head of the list as an input argument.
+-checks if the head is NULL using a while loop.
+-it prints the value stored as the value of the current node.
+-//head=head-> next// increments the head pointer so that it points to the next element of the list and the process repeats itself for the next node.

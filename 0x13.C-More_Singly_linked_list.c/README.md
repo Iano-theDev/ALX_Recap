@@ -25,6 +25,8 @@ Basic operation of a linked list requires traversing the linked list. The variou
 2.Print various elements of the list.
 3.Search an element in the list.
 4.Delete  an element in the list.
-5.Reverse a linked list.
+5.Reverse a linked list.<br>
 
+You cannot use  Head to traverse (travel across or through) a linked list because if we use the head, then we lose the nodes of the list. We have to use another pointer variable of some data-type as the head.
 
+<b>Inserting Elements to the list</b>

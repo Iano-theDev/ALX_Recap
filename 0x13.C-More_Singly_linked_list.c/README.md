@@ -50,3 +50,4 @@ int InsertNode(NodePtr* ptrHead, int value)
 }
 
 ```
+<b>Traversing through a linked list</b>

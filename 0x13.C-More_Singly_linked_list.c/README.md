@@ -30,3 +30,23 @@ Basic operation of a linked list requires traversing the linked list. The variou
 You cannot use  Head to traverse (travel across or through) a linked list because if we use the head, then we lose the nodes of the list. We have to use another pointer variable of some data-type as the head.
 
 <b>Inserting Elements to the list</b>
+```rb
+struct Node {
+    int value;
+    Node *next;
+};
+typedef Node *NodePtr;
+
+int InsertNode(NodePtr* ptrHead, int value)
+{
+    printf("Insert Node: %d", value);
+    NodePtr tempPtr = (NodePtr) malloc (sizeof(Node));
+    if(!tempPtr)
+    return -1;
+    tempPtr-> value = value;
+    tempPtr-> next =*prtHead;
+    *ptrHead = tempPtr;
+    return 1;
+}
+
+```

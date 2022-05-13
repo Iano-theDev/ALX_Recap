@@ -50,7 +50,7 @@ int InsertNode(NodePtr* ptrHead, int value)
 }
 
 ```
-<b>Traversing through a linked list</b>
+<b>Traversing through a linked list</b></br>
 The following is a function to print various nodes of a linked linked list(singly):
 ```rb
 void PrintList(NodePtr head)

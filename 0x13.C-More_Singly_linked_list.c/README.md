@@ -67,3 +67,4 @@ void PrintList(NodePtr head)
 -checks if the head is NULL using a while loop.
 -it prints the value stored as the value of the current node.
 -//head=head-> next// increments the head pointer so that it points to the next element of the list and the process repeats itself for the next node.
+```

@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * Function to print the elements of a listint_t list
  * main - check the code
- * sturct listint_s - singly linked list
+ * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node 
  * Description: singly linked list node structure

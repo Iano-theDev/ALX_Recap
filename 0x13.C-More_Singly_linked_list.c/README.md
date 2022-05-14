@@ -69,3 +69,4 @@ void PrintList(NodePtr head)
 -//head=head-> next// increments the head pointer so that it points to the next element of the list and the process repeats itself for the next node.
 ```
 
+<h4>Inserting an element at the end of a linked list Given Head pointer</h4><br>

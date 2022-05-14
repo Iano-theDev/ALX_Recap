@@ -46,5 +46,13 @@ int main()
     //Use push to construct the below list
     //1->2->1->3->1
     push(&head, 1);
-    push()
+    push(&head, 3);
+    push(&head, 1);
+    push(&head, 1);
+    push(&head, 2);
+    push(&head, 1);
+
+    //check the count function
+    printf("Count of node is %d", getCount(head));
+    return (0);
 }

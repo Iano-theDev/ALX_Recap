@@ -70,3 +70,16 @@ void PrintList(NodePtr head)
 ```
 
 <h4>Inserting an element at the end of a linked list Given Head pointer</h4><br>
+
+<h4>To find the length of a linked list</h4>
+<br>
+We basically iterate through the linked list while incrementing the count: <br>
+1. Initialize count as 0.
+2. Initialize a node pointer, current = head.
+3. Do 
+    a. current = current -> next
+    b. count++;
+    while current is not NULL.
+4. Return count.
+
+the following program /count.c/ is used to find the number of nodes in the linked list.

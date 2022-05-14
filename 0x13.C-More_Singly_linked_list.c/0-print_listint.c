@@ -10,12 +10,15 @@
  * @next: points to the next node 
  * Description: singly linked list node structure
  */
-
 typedef struct listint_s
 {
     int n;
     struct listint_s *next;
 } listint_t;
+
+
+//function declaration
+size_t print_listint(const listint_t *h);
 
 
 int main(void)
@@ -26,7 +29,7 @@ int main(void)
     size_t n;
 
     head = &hello;
-    new = mallco(sizeof(listint_t));
+    new = malloc (sizeof(listint_t));
     if (new == NULL)
     {
         printf("Error\n");
@@ -41,7 +44,16 @@ int main(void)
     return (0);
 }
 
+//function definitions
 size_t print_listint(const listint_t *h)
 {
+    size_t count = 0;
 
+    while (h)
+    {
+        printf("%d \n", h -> n);
+        h = h-> next;
+        count++;
+    }
+    return (count);
 }

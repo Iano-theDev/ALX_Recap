@@ -83,3 +83,8 @@ We basically iterate through the linked list while incrementing the count: <br>
 4. Return count.
 
 the following program /count.c/ is used to find the number of nodes in the linked list.
+
+<h3>TEST QUIZES</h3>
+1. A function that returns the number of elements in a linked listint_t list. //1-listint_len.c//
+
+2.

@@ -87,4 +87,6 @@ the following program /count.c/ is used to find the number of nodes in the linke
 <h3>TEST QUIZES</h3>
 1. A function that returns the number of elements in a linked listint_t list. //1-listint_len.c//
 
-2.
+2.Add new node at the beginning of the list. 2-add_nodeint.c
+
+3.Add Node at the end of list. 3-add_nodeint_end.c
